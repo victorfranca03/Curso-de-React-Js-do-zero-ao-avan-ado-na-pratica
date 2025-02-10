@@ -1,9 +1,13 @@
-var nome = "Victor";
-var idade = prompt("Qual a sua idade?");
-var altura = 1.90;
+function atualizarInformacoes() {
+    var nome = "Victor";
+    var idade = prompt("Qual a sua idade?");
+    var altura = 1.90;
 
+    console.log(nome);
+    console.log(altura);
 
-console.log (nome);
-console.log (altura);
+    // Esse são minhas informações básicas
 
-//Esá são minhas informações basicas
+    var nomeIdadeElement = document.getElementById("nomeIdade");
+    nomeIdadeElement.innerText = "Nome: " + nome + ", Idade: " + idade;
+}
